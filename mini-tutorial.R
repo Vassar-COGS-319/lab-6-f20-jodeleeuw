@@ -19,5 +19,9 @@ choice <- sample(c('a','b'), 1, prob=c(10, 1))
 # of choosing 'a' should be 0.5, 'b' should be 0.3, and 'c' 0.2. generate 1,000 samples (HINT:
 # sample WITH replacement). store the choices in a variable called 'choices'.
 
+result <- sample(c('a','b','c'), 1000, replace=T, prob=c(0.5,0.3,0.2))
+
 # now, look up the table() function and the barplot() function. use them together to create
 # a bar graph that visualizes the number of times each option was selected.
+
+barplot(table(result))
